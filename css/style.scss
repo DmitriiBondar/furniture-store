@@ -277,6 +277,7 @@ a {
         color: #888888;
         margin-bottom: 12px;
         font-weight: 400;
+        width: 100%;
     }
 }
 
@@ -983,14 +984,20 @@ input[type=number]::-webkit-inner-spin-button {
 
     .product {
         width: 345px;
+        // width: 100%;
     }
 
     .product__description {
         width: 345px;
+        // width: 100%;
     }
 
-    .product-grid img {
+    .product-grid {
         width: 345px;
+        & img {
+            width: 345px;
+            // width: 100%;
+        }
     }
 
     .basket__right {
@@ -1022,9 +1029,13 @@ input[type=number]::-webkit-inner-spin-button {
         width: 100%;
     }
 
-    .product-grid img {
-        // width: 376px;
+    .product-grid {
         width: 100%;
+        
+        & img {
+            //width: 376px;
+            width: 100%;
+        }
     }
 
     .basket__right {

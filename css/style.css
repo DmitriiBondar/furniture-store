@@ -255,6 +255,7 @@ a {
   color: #888888;
   margin-bottom: 12px;
   font-weight: 400;
+  width: 100%;
 }
 
 .button-svg {
@@ -896,6 +897,9 @@ input[type=number]::-webkit-inner-spin-button {
   .product__description {
     width: 345px;
   }
+  .product-grid {
+    width: 345px;
+  }
   .product-grid img {
     width: 345px;
   }
@@ -919,6 +923,9 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
   }
   .product__description {
+    width: 100%;
+  }
+  .product-grid {
     width: 100%;
   }
   .product-grid img {
