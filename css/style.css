@@ -248,6 +248,7 @@ a {
   color: #000000;
   margin-bottom: 9px;
   margin-top: 10px;
+  width: 100%;
 }
 .product__description {
   font-size: 14px;
