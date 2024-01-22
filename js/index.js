@@ -1,5 +1,25 @@
 // alert("Приветствуем, дорогой гость!");
 
+// Анимация при скролле
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    } else {
+      // setTimeout(() => {
+        // change.target.classList.remove('element-show');
+      // }, 1000)
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+// ------------
+
 const myInput = document.getElementById("basket-left-input-1");
 function stepper1(btn) {
     let id = btn.getAttribute("id");
