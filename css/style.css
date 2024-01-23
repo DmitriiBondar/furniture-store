@@ -831,10 +831,12 @@ a {
   color: #000;
   font-size: 16px;
   font-weight: 400;
+  transition: all 0.33s;
 }
 .basket__right-buttonInside:hover {
   background-color: #000;
   color: #ffffff;
+  transform: scale(1.07);
 }
 .basket__button {
   display: inline-flex;
