@@ -206,13 +206,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        // transition:  .7s;
-
-        // &:hover {
-        //     transform: scale(1.03);
-        //     box-shadow: 3px 3px 10px #868585;
-        //     border-radius: 5px;
-        // }
     }
 
     &-big {
@@ -344,40 +337,12 @@ a {
     color: #000000;
     margin-bottom: 32px;
     max-width: 729px;
-
-    &.element-animation {
-        opacity: 0;
-        transform: translateX(-30px);
-
-        &.element-show {
-            opacity: 1;
-            transform: translateX(0px);
-            transition: all 1s;
-        }
-    }
 }
 
 .product {
     width: 376px;
     padding: 5px;
     box-sizing: border-box;
-    // transition: all .33s;
-
-    &.element-animation {
-        opacity: 0;
-        transform: rotate(3deg) translateX(30px) scale(.9);
-
-        &.element-show {
-            opacity: 1;
-            transform: rotate(0deg) translateX(0px) scale(1);
-            transition: all .7s;
-
-            &:hover {
-                transform: scale(1.03) rotate(.5deg);
-                box-shadow: 0 0 5px #C4C4C4;
-            }
-        }
-    }
 
     & img {
         width: 100%;
@@ -652,25 +617,8 @@ a {
     color: $colorText;
     font-size: 34px;
     font-weight: 600;
-    // transition: all .33s;
     padding: 5px;
     box-sizing: border-box;
-
-    &.element-animation {
-        opacity: 0;
-        transform: rotate(-3deg) translateX(-30px) scale(.9);
-
-        &.element-show {
-            opacity: 1;
-            transform: rotate(0deg) translateX(0px) scale(1);
-            transition: all .7s;
-
-            &:hover {
-                transform: scale(1.03) rotate(-.5deg);
-                box-shadow: 0 0 5px #C4C4C4;
-            }
-        }
-    }
 }
 
 .ul-catalog {
@@ -964,7 +912,6 @@ a {
                 color: #000;
                 font-size: 16px;
                 font-weight: 400;
-                animation: myAnim 2s ease 0s 1 normal forwards;
 
                 &:hover {
                     background-color: #000;
@@ -1074,6 +1021,108 @@ a {
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.upJump.element-animation {
+    opacity: 0;
+
+    &.element-show {
+        opacity: 1;
+        transition: opacity .5s;
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+}
+
+
+.textAn.element-animation {
+    opacity: 0;
+    transform: translateX(-40px);
+
+    &.element-show {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1.3s;
+    }
+}
+
+.prod-1.element-animation {
+    opacity: 0;
+    transform: rotate(-3deg) translateX(-30px) scale(.9);
+
+    &.element-show {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0px) scale(1);
+        transition: all .7s;
+
+        &:hover {
+            transform: scale(1.03) rotate(-.5deg);
+            box-shadow: 0 0 5px #C4C4C4;
+        }
+    } 
+}
+
+.prod-2.element-animation {
+    opacity: 0;
+    transform: rotate(3deg) translateX(10px) scale(.95);
+
+    &.element-show {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0px) scale(1);
+        transition: all .7s;
+
+        &:hover {
+            transform: scale(1.03) rotate(.5deg);
+            box-shadow: 0 0 5px #C4C4C4;
+        }
+    } 
+}
+
+.prod-3.element-animation {
+    opacity: 0;
+    transform: rotate(.5deg) translateY(30px) scale(.95);
+
+    &.element-show {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0px) scale(1);
+        transition: all .7s;
+
+        &:hover {
+            transform: scale(1.03) rotate(-.5deg);
+            box-shadow: 0 0 5px #C4C4C4;
+        }
+    } 
+}
+
+.prod-4.element-animation {
+    opacity: 0;
+    transform: rotate(2deg) translateX(-30px) translateY(-30px) scale(.9);
+
+    &.element-show {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0px) translateY(0px) scale(1);
+        transition: all .7s;
+
+        &:hover {
+            transform: scale(1.03) rotate(.5deg);
+            box-shadow: 0 0 5px #C4C4C4;
+        }
+    } 
+}
+
+.prod-5.element-animation {
+    opacity: 0;
+    transform: rotate(-3deg) translateY(40px) scale(.8);
+
+    &.element-show {
+        opacity: 1;
+        transform: rotate(0deg) translateY(0px) scale(1);
+        transition: all .7s;
+
+        &:hover {
+            transform: scale(1.03) rotate(.5deg);
+            box-shadow: 0 0 5px #C4C4C4;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

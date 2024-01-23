@@ -303,33 +303,11 @@ a {
   margin-bottom: 32px;
   max-width: 729px;
 }
-.special-offers.element-animation {
-  opacity: 0;
-  transform: translateX(-30px);
-}
-.special-offers.element-animation.element-show {
-  opacity: 1;
-  transform: translateX(0px);
-  transition: all 1s;
-}
 
 .product {
   width: 376px;
   padding: 5px;
   box-sizing: border-box;
-}
-.product.element-animation {
-  opacity: 0;
-  transform: rotate(3deg) translateX(30px) scale(0.9);
-}
-.product.element-animation.element-show {
-  opacity: 1;
-  transform: rotate(0deg) translateX(0px) scale(1);
-  transition: all 0.7s;
-}
-.product.element-animation.element-show:hover {
-  transform: scale(1.03) rotate(0.5deg);
-  box-shadow: 0 0 5px #C4C4C4;
 }
 .product img {
   width: 100%;
@@ -588,19 +566,6 @@ a {
   font-weight: 600;
   padding: 5px;
   box-sizing: border-box;
-}
-.product-grid.element-animation {
-  opacity: 0;
-  transform: rotate(-3deg) translateX(-30px) scale(0.9);
-}
-.product-grid.element-animation.element-show {
-  opacity: 1;
-  transform: rotate(0deg) translateX(0px) scale(1);
-  transition: all 0.7s;
-}
-.product-grid.element-animation.element-show:hover {
-  transform: scale(1.03) rotate(-0.5deg);
-  box-shadow: 0 0 5px #C4C4C4;
 }
 
 .ul-catalog {
@@ -866,7 +831,6 @@ a {
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .basket__right-buttonInside:hover {
   background-color: #000;
@@ -960,6 +924,95 @@ a {
 
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.upJump.element-animation {
+  opacity: 0;
+}
+.upJump.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.textAn.element-animation {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+.textAn.element-animation.element-show {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1.3s;
+}
+
+.prod-1.element-animation {
+  opacity: 0;
+  transform: rotate(-3deg) translateX(-30px) scale(0.9);
+}
+.prod-1.element-animation.element-show {
+  opacity: 1;
+  transform: rotate(0deg) translateX(0px) scale(1);
+  transition: all 0.7s;
+}
+.prod-1.element-animation.element-show:hover {
+  transform: scale(1.03) rotate(-0.5deg);
+  box-shadow: 0 0 5px #C4C4C4;
+}
+
+.prod-2.element-animation {
+  opacity: 0;
+  transform: rotate(3deg) translateX(10px) scale(0.95);
+}
+.prod-2.element-animation.element-show {
+  opacity: 1;
+  transform: rotate(0deg) translateX(0px) scale(1);
+  transition: all 0.7s;
+}
+.prod-2.element-animation.element-show:hover {
+  transform: scale(1.03) rotate(0.5deg);
+  box-shadow: 0 0 5px #C4C4C4;
+}
+
+.prod-3.element-animation {
+  opacity: 0;
+  transform: rotate(0.5deg) translateY(30px) scale(0.95);
+}
+.prod-3.element-animation.element-show {
+  opacity: 1;
+  transform: rotate(0deg) translateY(0px) scale(1);
+  transition: all 0.7s;
+}
+.prod-3.element-animation.element-show:hover {
+  transform: scale(1.03) rotate(-0.5deg);
+  box-shadow: 0 0 5px #C4C4C4;
+}
+
+.prod-4.element-animation {
+  opacity: 0;
+  transform: rotate(2deg) translateX(-30px) translateY(-30px) scale(0.9);
+}
+.prod-4.element-animation.element-show {
+  opacity: 1;
+  transform: rotate(0deg) translateX(0px) translateY(0px) scale(1);
+  transition: all 0.7s;
+}
+.prod-4.element-animation.element-show:hover {
+  transform: scale(1.03) rotate(0.5deg);
+  box-shadow: 0 0 5px #C4C4C4;
+}
+
+.prod-5.element-animation {
+  opacity: 0;
+  transform: rotate(-3deg) translateY(40px) scale(0.8);
+}
+.prod-5.element-animation.element-show {
+  opacity: 1;
+  transform: rotate(0deg) translateY(0px) scale(1);
+  transition: all 0.7s;
+}
+.prod-5.element-animation.element-show:hover {
+  transform: scale(1.03) rotate(0.5deg);
+  box-shadow: 0 0 5px #C4C4C4;
 }
 
 @media (max-width: 1024px) {
